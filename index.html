@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Register form start -->
+    <section class="form-body">
+        <form action="#" class="form-element">
+            <h2>register form</h2>
+            <div class="form-container">
+                <i class="fa fa-user icon"></i>
+                <input class="form-field" type="text" name="uname" placeholder="user name">
+            </div>
+            <div class="form-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="form-field" type="email" name="email" placeholder="email">
+            </div>
+            <div class="form-container">
+                <i class="fa fa-key icon"></i>
+                <input class="form-field" type="password" name="pword" placeholder="password">
+            </div>
+            <button type="submit" class="btn">register</button>
+            <input class="form-btn" type="submit" value="have an account">
+        </form>
+    </section>
+    <!-- Register form end -->
+
+    <!-- Login form start -->
+    <section class="log-form-body">
+        <h2>login form</h2>
+        <form action="#" class="log-form-element">
+            <div class="log-img-container">
+                <img src="assets/media/images/user.png" alt="avatar-img">
+            </div>
+            <div class="log-form-container1">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" class="intex" id="uname" name="uname" placeholder="Enter Username" required>
+                <label for="pwd"><b>Password</b></label>
+                <input type="password" class="inpas" id="pwd" name="pwd" placeholder="Enter Password" required>
+                <button type="submit" class="logbtn">Login</button>
+                <label>
+                    <input type="checkbox" name="check"> Remember me
+                </label>
+            </div>
+            <div class="log-form-container2">
+                <button type="button" class="canbttn">Cancel</button>
+                <span class="psw">Forget <a href="#">password</a></span>
+            </div>
+        </form>
+    </section>
+    <!-- Login form end -->
+
+    <!-- Social login form start -->
+    <section class="soc-log-body">
+        <h2>Social Login Form</h2>
+        <form action="#" class="soc-log-element">
+            <div class="soc-rw">
+                <h2>Login with Social Media or Manually</h2>
+                <div class="ver-lne">
+                    <span class="ver-lne-it">or</span>
+                </div>
+                <div class="soc-cl">
+                    <a href="#" class="fb so-btn"><i class="fa-brands fa-facebook-f"></i> Login with Facebook</a>
+                    <a href="#" class="twitr so-btn"><i class="fa-brands fa-twitter"></i> Login with Twitter</a>
+                    <a href="#" class="goo so-btn"><i class="fa-brands fa-google"></i> Login with Google+</a>
+                </div> 
+                <div class="soc-cl">
+                    <input type="text" name="text" class="soc-input" placeholder="Username" required>
+                    <input type="password" name="password" class="soc-input" placeholder="Password" required>
+                    <input type="submit" class="soc-input-sb" value="Login">
+                </div>
+            </div>
+        </form>
+        <div class="soc-bottom">
+            <div class="soc-rw">
+                <div class="soc-cl">
+                    <a href="#" class="so-btn btn-bottom">Sign up</a>
+                </div>
+                <div class="soc-cl">
+                    <a href="#" class="so-btn btn-bottom">Forget password?</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Social login form end -->
+    
+    <!-- Checkout form start -->
+    <section class="check-form-body">
+        <h2>Checkout Form</h2>
+        <form action="#" class="check-form-element">
+            <div class="check-rw">
+                <div class="check-cl">
+                    <h3>Billing Address</h3>
+                    <label for="fname" class="check-lab"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" class="check-in" id="fname" name="fname" placeholder="Rahul Ritchil">
+                    <label for="email" class="check-lab"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" class="check-in" id="email" name="email" placeholder="ritchil@example.com">
+                    <label for="adr" class="check-lab"><i class="fa-regular fa-address-card"></i> Address</label>
+                    <input type="text" class="check-in" id="adr" name="address" placeholder="Mymensingh">
+                    <label for="city" class="check-lab"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" class="check-in" id="city" name="city" placeholder="Dhaka">
+
+                    <div class="check-rw">
+                        <div class="check-cl">
+                            <label for="state" class="check-lab">State</label>
+                            <input type="text" class="check-in" id="state" name="state" placeholder="BD">
+                        </div>
+                        <div class="check-cl">
+                            <label for="zip" class="check-lab">Zip</label>
+                            <input type="text" class="check-in" id="zip" name="zip" placeholder="1212">
+                        </div>
+                    </div>
+                </div>
+                <div class="check-cl">
+                    <h3>Payment</h3>
+                    <label for="fname" class="check-lab">Accepted Cards</label>
+                    <div class="icon-container">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-discover"></i>
+                    </div>
+                    <label for="cname" class="check-lab">Name on Card</label>
+                    <input type="text" class="check-in" id="cname" name="cardname" placeholder="Rahul Ritchil">
+                    <label for="ccnum" class="check-lab">Credit card number</label>
+                    <input type="text" class="check-in" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth" class="check-lab">Exp Month</label>
+                    <input type="text" class="check-in" id="expmonth" name="expmonth" placeholder="April">
+                    <div class="check-rw">
+                        <div class="check-cl">
+                            <label for="expyear" class="check-lab">Exp Year</label>
+                            <input type="text" class="check-in" id="expyear" name="expyear" placeholder="2024">
+                        </div>
+                        <div class="check-cl">
+                            <label for="cvv" class="check-lab">CVV</label>
+                            <input type="text" class="check-in" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label class="check-lab">
+                <input type="checkbox" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="check-btn">
+            
+            <div class="check-cart">
+                <h4>Cart <span class="price"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                <p><a href="#">Ritch Product 1</a> <span class="price">$15</span></p>
+                <p><a href="#">Ritch Product 2</a> <span class="price">$5</span></p>
+                <p><a href="#">Ritch Product 3</a> <span class="price">$8</span></p>
+                <p><a href="#">Ritch Product 4</a> <span class="price">$2</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+            </div>
+            
+        </form>
+    </section>
+    <!-- Checkout form end -->
+</body>
+</html>
